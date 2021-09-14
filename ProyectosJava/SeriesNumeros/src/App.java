@@ -1,8 +1,5 @@
-package ProyectosJava.SerieNumeros.src;
-
 public class App {
     public static void main(String[] args) throws Exception {
-
         int a = 1, b = 2, c = 10, suma = 0;
         System.out.println(a);
         System.out.println(b);
@@ -13,7 +10,7 @@ public class App {
             b = suma;
         }
 
-        System.out.println("Ahora con el ciclo while\n\n");
+        System.out.println("Ahora con el ciclo do while\n\n");
         int j = 1;
         a = 1;
         b = 2;
@@ -21,13 +18,12 @@ public class App {
         suma = 0;
         System.out.println(a);
         System.out.println(b);
-        while (j <= c) {
+        do {
             suma = a + b;
             System.out.println(suma);
             a = b;
             b = suma;
             j++;
-        }
-
+        } while (j <= c);
     }
 }
